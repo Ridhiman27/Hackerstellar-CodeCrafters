@@ -42,7 +42,7 @@ function Home() {
                 
                 <div className="rectangleGroup">
                     <div className="frameItem" />
-                    <div  onClick={redirect_to_track} className="buscar">Track Medicines</div>
+                    <div  onClick={redirect_to_track} className="buscar">Track Material</div>
                 </div>
                 </div>
                 </div>

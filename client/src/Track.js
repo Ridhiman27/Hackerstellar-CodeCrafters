@@ -101,8 +101,8 @@ function Track() {
         return (
             <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
-                    <h3><b><u>Medicine:</u></b></h3>
-                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Material:</u></b></h3>
+                    <span><b>Material ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -159,8 +159,8 @@ function Track() {
         return (
             <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
-                    <h3><b><u>Medicine:</u></b></h3>
-                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Material:</u></b></h3>
+                    <span><b>Material ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -213,8 +213,8 @@ function Track() {
         return (
             <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
-                    <h3><b><u>Medicine:</u></b></h3>
-                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Material:</u></b></h3>
+                    <span><b>Material ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -260,8 +260,8 @@ function Track() {
         return (
             <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
-                    <h3><b><u>Medicine:</u></b></h3>
-                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Material:</u></b></h3>
+                    <span><b>Material ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -300,8 +300,8 @@ function Track() {
         return (
             <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
-                    <h3><b><u>Medicine:</u></b></h3>
-                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Material:</u></b></h3>
+                    <span><b>Material ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -333,8 +333,8 @@ function Track() {
         return (
             <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
-                    <h3><b><u>Medicine:</u></b></h3>
-                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Material:</u></b></h3>
+                    <span><b>Material ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -343,7 +343,7 @@ function Track() {
                     <span><b>Current stage: </b>{MedStage[ID]}</span>
                     <hr />
                     <br />
-                    <h5>Medicine Not Yet Processed...</h5>
+                    <h5>Material Not Yet Processed...</h5>
                     <button onClick={() => {
                         showTrackTillOrdered(false);
                     }} className="btn btn-outline-success btn-sm">Track Another Item</button>
@@ -373,7 +373,7 @@ function Track() {
         event.preventDefault();
         var ctr = await SupplyChain.methods.medicineCtr().call();
         if (!((ID > 0) && (ID <= ctr)))
-            alert("Invalid Medicine ID!!!");
+            alert("Invalid Material ID!!!");
         else {
             // eslint-disable-next-line
             if (MED[ID].stage == 5)
@@ -403,7 +403,7 @@ function Track() {
             <table className="table table-sm table-bordered" style={{color: 'white', backgroundColor:"#080e32"}}>
                 <thead>
                     <tr>
-                        <th scope="col">Medicine ID</th>
+                        <th scope="col">Material ID</th>
                         <th scope="col">Name</th>
                         <th scope="col">Description</th>
                         <th scope="col">Current Processing Stage</th>
@@ -426,10 +426,10 @@ function Track() {
                     })}
                 </tbody>
             </table>
-            <h5>Enter Medicine ID to Track it</h5>
+            <h5>Enter Product ID to Track it</h5>
 
             <form onSubmit={handlerSubmit}>
-                <input className="form-control-sm" type="text" onChange={handlerChangeID} placeholder="Enter Medicine ID" required />
+                <input className="form-control-sm" type="text" onChange={handlerChangeID} placeholder="Enter Product ID" required />
                 <button className="btn btn-outline-success btn-sm m-2" onSubmit={handlerSubmit}>Track</button>
             </form>
         </div>
