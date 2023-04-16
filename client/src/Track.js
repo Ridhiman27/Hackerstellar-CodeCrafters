@@ -99,7 +99,7 @@ function Track() {
     }
     if (TrackTillSold) {
         return (
-            <div className="container-xl">
+            <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
                     <h3><b><u>Medicine:</u></b></h3>
                     <span><b>Medicine ID: </b>{MED[ID].id}</span>
@@ -157,7 +157,7 @@ function Track() {
     }
     if (TrackTillRetail) {
         return (
-            <div className="container-xl">
+            <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
                     <h3><b><u>Medicine:</u></b></h3>
                     <span><b>Medicine ID: </b>{MED[ID].id}</span>
@@ -211,7 +211,7 @@ function Track() {
     }
     if (TrackTillDistribution) {
         return (
-            <div className="container-xl">
+            <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
                     <h3><b><u>Medicine:</u></b></h3>
                     <span><b>Medicine ID: </b>{MED[ID].id}</span>
@@ -258,7 +258,7 @@ function Track() {
     }
     if (TrackTillManufacture) {
         return (
-            <div className="container-xl">
+            <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
                     <h3><b><u>Medicine:</u></b></h3>
                     <span><b>Medicine ID: </b>{MED[ID].id}</span>
@@ -298,7 +298,7 @@ function Track() {
     }
     if (TrackTillRMS) {
         return (
-            <div className="container-xl">
+            <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
                     <h3><b><u>Medicine:</u></b></h3>
                     <span><b>Medicine ID: </b>{MED[ID].id}</span>
@@ -331,7 +331,7 @@ function Track() {
     }
     if (TrackTillOrdered) {
         return (
-            <div className="container-xl">
+            <div className="container-xl" style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
                 <article className="col-4">
                     <h3><b><u>Medicine:</u></b></h3>
                     <span><b>Medicine ID: </b>{MED[ID].id}</span>
@@ -397,10 +397,10 @@ function Track() {
     }
 
     return (
-        <div>
+        <div style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
             <span><b>Current Account Address:</b> {currentaccount}</span>
-            <span onClick={redirect_to_home} className="btn btn-outline-danger btn-sm"> HOME</span>
-            <table className="table table-sm table-bordered">
+            <span onClick={redirect_to_home} className="btn btn-outline-danger btn-sm m-2"> HOME</span>
+            <table className="table table-sm table-bordered" style={{color: 'white', backgroundColor:"#080e32"}}>
                 <thead>
                     <tr>
                         <th scope="col">Medicine ID</th>
@@ -412,7 +412,7 @@ function Track() {
                 <tbody>
                     {Object.keys(MED).map(function (key) {
                         return (
-                            <tr key={key}>
+                            <tr key={key} style={{color: 'white', backgroundColor:"#080e32"}}>
                                 <td>{MED[key].id}</td>
                                 <td>{MED[key].name}</td>
                                 <td>{MED[key].description}</td>
@@ -430,7 +430,7 @@ function Track() {
 
             <form onSubmit={handlerSubmit}>
                 <input className="form-control-sm" type="text" onChange={handlerChangeID} placeholder="Enter Medicine ID" required />
-                <button className="btn btn-outline-success btn-sm" onSubmit={handlerSubmit}>Track</button>
+                <button className="btn btn-outline-success btn-sm m-2" onSubmit={handlerSubmit}>Track</button>
             </form>
         </div>
     )

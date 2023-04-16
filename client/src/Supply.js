@@ -132,9 +132,9 @@ function Supply() {
         }
     }
     return (
-        <div>
+        <div  style={{color: 'white', backgroundColor:"#080e32"}}>
             <span><b>Current Account Address:</b> {currentaccount}</span>
-            <span onClick={redirect_to_home} className="btn btn-outline-danger btn-sm"> HOME</span>
+            <span onClick={redirect_to_home} className="btn btn-outline-danger btn-sm ml-2"> HOME</span>
             <h6><b>Supply Chain Flow:</b></h6>
             <p>Medicine Order -&gt; Raw Material Supplier -&gt; Manufacturer -&gt; Distributor -&gt; Retailer -&gt; Consumer</p>
             <table className="table table-sm table-dark">
@@ -149,7 +149,7 @@ function Supply() {
                 <tbody>
                     {Object.keys(MED).map(function (key) {
                         return (
-                            <tr key={key}>
+                            <tr key={key} style={{color: 'white'}}>
                                 <td>{MED[key].id}</td>
                                 <td>{MED[key].name}</td>
                                 <td>{MED[key].description}</td>

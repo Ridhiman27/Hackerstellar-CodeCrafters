@@ -89,19 +89,19 @@ function AddMed() {
         }
     }
     return (
-        <div>
+        <div  style={{color: 'white', backgroundColor:"#080e32", height:'100ex'}}>
             <span><b>Current Account Address:</b> {currentaccount}</span>
-            <span onClick={redirect_to_home} className="btn btn-outline-danger btn-sm"> HOME</span>
+            <span onClick={redirect_to_home} className="btn btn-outline-danger btn-sm ml-2"> HOME</span>
             <br />
-            <h5>Add Medicine Order:</h5>
+            <h5>Add Material Order:</h5>
             <form onSubmit={handlerSubmitMED}>
-                <input className="form-control-sm" type="text" onChange={handlerChangeNameMED} placeholder="Medicine Name" required />
-                <input className="form-control-sm" type="text" onChange={handlerChangeDesMED} placeholder="Medicine Description" required />
-                <button className="btn btn-outline-success btn-sm" onSubmit={handlerSubmitMED}>Order</button>
+                <input className="form-control-sm" type="text" onChange={handlerChangeNameMED} placeholder="Material Name" required />
+                <input className="form-control-sm" type="text" onChange={handlerChangeDesMED} placeholder="Material Description" required />
+                <button className="btn btn-outline-success btn-sm ml-2" onSubmit={handlerSubmitMED}>Order</button>
             </form>
             <br />
-            <h5>Ordered Medicines:</h5>
-            <table className="table table-bordered">
+            <h5>Ordered Materials:</h5>
+            <table className="table table-bordered" style={{color: 'white'}}>
                 <thead>
                     <tr>
                         <th scope="col">ID</th>

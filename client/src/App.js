@@ -1,4 +1,5 @@
 import './App.css';
+import "./global.css";
 import AssignRoles from './AssignRoles';
 import Home from './Home';
 import AddMed from './AddMed';

@@ -183,7 +183,7 @@ function AssignRoles() {
 
 
     return (
-        <div>
+        <div style={{color: 'white', backgroundColor:"#080e32"}}>
             <span><b>Current Account Address:</b> {currentaccount}</span>
             <span onClick={redirect_to_home} className="btn btn-outline-danger btn-sm">HOME</span>
             <h4>Raw Material Suppliers:</h4>
@@ -193,7 +193,7 @@ function AssignRoles() {
                 <input className="form-control-sm" type="text" onChange={handlerChangePlaceRMS} placeholder="Based In" required />
                 <button className="btn btn-outline-success btn-sm" onSubmit={handlerSubmitRMS}>Register</button>
             </form>
-            <table className="table table-sm">
+            <table className="table table-sm" style={{color: 'white'}}>
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
@@ -222,7 +222,7 @@ function AssignRoles() {
                 <input className="form-control-sm" type="text" onChange={handlerChangePlaceMAN} placeholder="Based In" required />
                 <button className="btn btn-outline-success btn-sm" onSubmit={handlerSubmitMAN}>Register</button>
             </form>
-            <table className="table table-sm">
+            <table className="table table-sm" style={{color: 'white'}}>
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
@@ -251,7 +251,7 @@ function AssignRoles() {
                 <input className="form-control-sm" type="text" onChange={handlerChangePlaceDIS} placeholder="Based In" required />
                 <button className="btn btn-outline-success btn-sm" onSubmit={handlerSubmitDIS}>Register</button>
             </form>
-            <table className="table table-sm">
+            <table className="table table-sm" style={{color: 'white'}}>
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
@@ -274,13 +274,13 @@ function AssignRoles() {
                 </tbody>
             </table>
             <h4>Retailers:</h4>
-            <form onSubmit={handlerSubmitRET}>
+            <form onSubmit={handlerSubmitRET} style={{color: 'white'}}>
                 <input className="form-control-sm" type="text" onChange={handlerChangeAddressRET} placeholder="Ethereum Address" required />
                 <input className="form-control-sm" type="text" onChange={handlerChangeNameRET} placeholder="Retailer Name" required />
                 <input className="form-control-sm" type="text" onChange={handlerChangePlaceRET} placeholder="Based In" required />
                 <button className="btn btn-outline-success btn-sm" onSubmit={handlerSubmitRET}>Register</button>
             </form>
-            <table className="table table-sm">
+            <table className="table table-sm" style={{color: 'white'}}>
                 <thead>
                     <tr>
                         <th scope="col">ID</th>

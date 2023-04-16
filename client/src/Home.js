@@ -1,5 +1,8 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
+//import from './App.css';
+import  './App.css';
+
 
 function Home() {
     const history = useHistory()
@@ -16,26 +19,36 @@ function Home() {
         history.push('/track')
     }
     return (
-        <div>
-            <h3>Pharmaceutical Supply Chain Flow :- </h3>
-            <br />
-            <h6>(Note: Here <u>Owner</u> is the person who deployed the smart contract on the blockchain)</h6>
-            <h5>Step 1: Owner Should Register Raw material suppliers ,Manufacturers, Distributors and Retailers</h5>
-            <h6>(Note: This is a one time step. Skip to step 2 if already done)</h6>
-            <button onClick={redirect_to_roles} className="btn btn-outline-primary btn-sm">Register</button>
-            <br />
-            <h5>Step 2: Owner should order medicines</h5>
-            <button onClick={redirect_to_addmed} className="btn btn-outline-primary btn-sm">Order Medicines</button>
-            <br />
-            <h5>Step 3: Control Supply Chain</h5>
-            <button onClick={redirect_to_supply} className="btn btn-outline-primary btn-sm">Control Supply Chain</button>
-            <br />
-            <hr />
-            <br />
-            <h5><b>Track</b> the medicines:</h5>
-            <button onClick={redirect_to_track} className="btn btn-outline-primary btn-sm">Track Medicines</button>
+    <div className="listaUnidadNegocio">
+            <div className="rectangleParent">
+                <div className="frameChild" >
+                <b className="unidadesDeNegocio">Supply Chain Flow</b>
+                
+                <div className="queue">
+
+                <div className="rectangleGroup">
+                    <div className="frameItem" />
+                    <div  onClick={redirect_to_roles} className="buscar">Register</div>
+                </div>
+               
+                <div className="rectangleGroup">
+                    <div className="frameItem" />
+                    <div  onClick={redirect_to_addmed} className="buscar">Order Material</div>
+                </div>
+                <div className="rectangleGroup">
+                    <div className="frameItem" />
+                    <div  onClick={redirect_to_supply} className="buscar">Control Chain</div>
+                </div>
+                
+                <div className="rectangleGroup">
+                    <div className="frameItem" />
+                    <div  onClick={redirect_to_track} className="buscar">Track Medicines</div>
+                </div>
+                </div>
+                </div>
+            </div>
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;
